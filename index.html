@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span> LaunchPad
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme" title="Toggle dark/light mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="badge">🚀 Simple & Modern Starter</div>
+      <h1 class="hero-title">Build Something <span class="gradient-text">Extraordinary</span> Today</h1>
+      <p class="hero-subtitle">
+        A clean, lightweight, and responsive HTML website ready to customize for your portfolio, product, or ideas.
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Explore Features</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Responsive</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">&lt; 10 KB</span>
+          <span class="stat-label">Lightweight</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Dependencies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Everything You Need to Begin</h2>
+        <p>Crafted with semantic HTML5, modern CSS3 variables, and clean vanilla JavaScript.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Lightning Fast</h3>
+          <p>No heavy frameworks or external bloat. Pure HTML, CSS, and JS that loads instantly in any browser.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Fully Responsive</h3>
+          <p>Carefully styled for mobile phones, tablets, laptops, and desktop screens with fluid layouts.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Dark Mode Ready</h3>
+          <p>Comes with a built-in theme toggle supporting both light and dark aesthetics seamlessly.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛠️</div>
+          <h3>Easy to Customize</h3>
+          <p>Well-commented code, logical file structure, and CSS custom properties make tweaking a breeze.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-alt">
+    <div class="container about-container">
+      <div class="about-content">
+        <span class="section-tag">About</span>
+        <h2>Simple Code. Endless Possibilities.</h2>
+        <p>
+          Whether you are learning web development, creating a quick prototype, or setting up a personal homepage, this starter template gives you a strong, clean foundation.
+        </p>
+        <ul class="checklist">
+          <li><span>✓</span> Clean, modern typography and spacing</li>
+          <li><span>✓</span> Semantic HTML5 for accessibility and SEO</li>
+          <li><span>✓</span> Ready-to-use form with instant feedback</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Say Hello</a>
+      </div>
+      <div class="about-card">
+        <div class="code-preview">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-title">index.html</span>
+          </div>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>Get In Touch</h2>
+        <p>Send a message and test out the interactive form below.</p>
+      </div>
+
+      <div class="contact-card">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div id="formStatus" class="form-status" role="alert"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="currentYear"></span> LaunchPad. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
